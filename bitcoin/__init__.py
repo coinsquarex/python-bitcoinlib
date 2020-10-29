@@ -69,7 +69,7 @@ class BitcoinSVMainParams(bitcoin.core.CoreMainParams):
     BASE58_PREFIXES = {'PUBKEY_ADDR':0,
                        'SCRIPT_ADDR':5,
                        'SECRET_KEY' :128}
-    BECH32_HRP = 'bc'
+    BECH32_HRP = 'doesnotexist'
 
 class BitcoinSVTestNetParams(bitcoin.core.CoreTestNetParams):
     MESSAGE_START = b'\x0b\x11\x09\x07' # ???
@@ -82,7 +82,7 @@ class BitcoinSVTestNetParams(bitcoin.core.CoreTestNetParams):
     BASE58_PREFIXES = {'PUBKEY_ADDR':111,
                        'SCRIPT_ADDR':196,
                        'SECRET_KEY' :239}
-    BECH32_HRP = 'tb'
+    BECH32_HRP = 'doesnotexist'
 
 class DashMainParams(bitcoin.core.CoreMainParams):
     MESSAGE_START = b'\xf9\xbe\xb4\xd9' # Incorrect
